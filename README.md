@@ -5,6 +5,6 @@
 ### Final Project : Fashion MNIST Classification
 ---
 ### Objective :
-In this project, we will classify Fashion-MNIST dataset using convolutional neural networks.
+In this project, I will classify Fashion-MNIST dataset using convolutional neural networks.
 
 ---
