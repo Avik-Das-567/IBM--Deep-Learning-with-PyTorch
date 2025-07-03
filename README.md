@@ -1,76 +1,66 @@
-# IBM - Deep Learning with PyTorch (on Coursera)
-## Final Assignment : Fashion MNIST Classification with Convolutional Neural Networks (CNN) in PyTorch
-This project demonstrates image classification on the **Fashion-MNIST dataset** using CNN built with **PyTorch**. The goal is to train a neural network that accurately classifies grayscale images of clothing items into 10 distinct categories.
+# IBM - Deep Learning with PyTorch (Coursera)
+---
+## Final Assignment : Fashion MNIST Classification with CNN using PyTorch
+This project demonstrates how to build, train, and evaluate a Convolutional Neural Network (CNN) to classify clothing items from the [Fashion-MNIST dataset](https://github.com/zalandoresearch/fashion-mnist) using PyTorch.
 
 ---
-## Overview
-The Fashion-MNIST dataset contains 28×28 grayscale images of fashion items (such as shirts, trousers, bags, etc.).  
+
+## Project Overview
+
+Fashion-MNIST is a dataset of 28×28 grayscale images across 10 fashion categories, designed as a more challenging alternative to the classic MNIST digit dataset.
+
 In this project:
-- Images are resized to 16×16 for computational efficiency.
-- The dataset is preprocessed and loaded using custom Dataset and DataLoader classes from PyTorch.
-- Two types of CNN models are implemented:  
-  - A standard CNN  
-  - A CNN with Batch Normalization layers to improve training stability and performance.
-- The models are trained to predict the correct category out of 10 possible classes.
----
-## Project Objectives
-
-- Understand how to preprocess image data for deep learning models.
-- Build and compare different CNN architectures.
-- Train the models and track the training process (cost and accuracy).
-- Visualize training progress to gain insights into model performance.
-- Achieve a test accuracy close to or above 88% on the validation dataset.
----
-
-## Key Components
-
-- **Dataset and DataLoader:**  
-  - Download and transform the Fashion-MNIST dataset.
-  - Resize images and convert them to tensors suitable for model training.
-
-- **Model Architectures:**  
-  - **Basic CNN:** A simple two-layer convolutional network followed by fully connected layers.
-  - **CNN with Batch Normalization:** An enhanced version of the basic CNN with batch normalization layers to improve convergence.
-
-- **Training Loop:**  
-  - Uses Stochastic Gradient Descent (SGD) as the optimizer with a learning rate of 0.1.
-  - Cross-Entropy Loss as the loss function.
-  - Runs for 5 epochs and tracks both training cost and validation accuracy.
-
-- **Visualization:**  
-  - Plots showing cost and accuracy trends over epochs help understand how the model learns.
+- The dataset is resized and transformed into tensors.
+- Two CNN models are implemented: one with batch normalization and one without.
+- Models are trained to classify images into categories such as shirts, coats, sneakers, etc.
+- Training performance is tracked using cost and accuracy metrics.
+- Visualizations of training progress are created to evaluate performance over multiple epochs.
 
 ---
-## Results
 
-After training for 5 epochs, the model achieved a test accuracy close to ~88% on the validation data.  
-Key results:
-- Smooth decrease in training cost across epochs.
-- Consistent improvement (or stabilization) in validation accuracy.
-
----
 ## Dependencies
 
-To run this project, the following Python libraries are required :
-- PyTorch
+To run this project, you'll need the following Python libraries:
+- torch
 - torchvision
 - matplotlib
-- PIL (Python Imaging Library)
+- pillow
 
 ---
+
+## Project Structure
+
+- **Dataset Preparation**: Download and preprocess Fashion-MNIST data.
+- **Model Definition**: Build CNN architectures with and without batch normalization.
+- **Training**: Train models using stochastic gradient descent and cross-entropy loss.
+- **Evaluation & Visualization**: Plot cost and accuracy curves to monitor training performance.
+
+---
+
+## Results
+
+After training for 5 epochs:
+- The model achieves around **88% validation accuracy**.
+- Training cost decreases steadily, demonstrating effective learning.
+
+These results show the strength of CNNs in handling real-world image classification tasks.
+
+---
+
 ## Dataset
 
-- **Fashion-MNIST**: Contains images representing 10 classes of clothing items.
-- Dataset source: https://github.com/zalandoresearch/fashion-mnist
+- **Source**: [Fashion-MNIST by Zalando Research](https://github.com/zalandoresearch/fashion-mnist)
+- Contains:
+  - 60,000 training images
+  - 10,000 test images
+- Each image represents a clothing item belonging to one of 10 categories.
 
 ---
-## Visualization
 
-The project includes visual plots:
-- **Training cost vs. epoch**
-- **Validation accuracy vs. epoch**
+## Summary
 
-These plots help understand the effectiveness of the training process and highlight the impact of model architecture choices.
+This project is a hands-on implementation of deep learning for image classification using PyTorch.  
+It illustrates how convolutional neural networks can be applied effectively on practical datasets beyond the classic MNIST digits.
 
 ---
 
