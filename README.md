@@ -1,6 +1,6 @@
 # IBM - Deep Learning with PyTorch (on Coursera)
 ## Final Assignment : Fashion MNIST Classification with Convolutional Neural Networks (CNN) in PyTorch
-This project demonstrates image classification on the **Fashion-MNIST dataset** using Convolutional Neural Networks built with **PyTorch**. The goal is to train a neural network that accurately classifies grayscale images of clothing items into 10 distinct categories.
+This project demonstrates image classification on the **Fashion-MNIST dataset** using CNN built with **PyTorch**. The goal is to train a neural network that accurately classifies grayscale images of clothing items into 10 distinct categories.
 
 ---
 ## Overview
