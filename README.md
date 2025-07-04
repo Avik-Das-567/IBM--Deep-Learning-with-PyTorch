@@ -5,7 +5,7 @@ This project demonstrates how to build, train, and evaluate a Convolutional Neur
 
 ---
 
-## Project Overview
+## Overview
 
 Fashion-MNIST is a dataset of 28×28 grayscale images across 10 fashion categories, designed as a more challenging alternative to the classic MNIST digit dataset.
 
